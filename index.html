@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090817">
+  <meta name="description" content="RetroPeople8 dünyasına hoş geldin. YouTube ve Instagram'da bizi takip et.">
+  <title>RetroPeople8 | Retro ruhunu keşfet</title>
+  <style>
+    :root { color-scheme: dark; --pink:#ff4fc8; --cyan:#45e6e0; --ink:#090817; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100vh; display:grid; place-items:center; overflow:hidden;
+      color:#f7f3ff; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+      background:
+        radial-gradient(ellipse at 50% 15%, rgba(117,54,170,.28), transparent 45%),
+        linear-gradient(145deg,#090817 0%,#15102b 55%,#090817 100%);
+    }
+    body:before {
+      content:""; position:fixed; inset:0; pointer-events:none; opacity:.13;
+      background-image:linear-gradient(rgba(255,255,255,.10) 1px,transparent 1px),
+                       linear-gradient(90deg,rgba(255,255,255,.10) 1px,transparent 1px);
+      background-size:34px 34px;
+      mask-image:linear-gradient(to bottom,black,transparent 90%);
+    }
+    .wrap { width:min(680px, calc(100% - 36px)); text-align:center; padding:64px 0; position:relative; }
+    .pixel { color:var(--cyan); font-size:13px; letter-spacing:.28em; text-transform:uppercase; font-weight:800; }
+    h1 {
+      margin:18px 0 12px; font-size:clamp(42px,9vw,76px); line-height:.98;
+      letter-spacing:-.065em; font-weight:950;
+      text-shadow:4px 4px 0 rgba(255,79,200,.75), 8px 8px 0 rgba(69,230,224,.20);
+    }
+    .rule { width:88px; height:4px; margin:26px auto; background:linear-gradient(90deg,var(--pink),var(--cyan)); box-shadow:0 0 20px #ff4fc877; }
+    .intro { color:#c9c2dd; font-size:clamp(16px,2.5vw,19px); line-height:1.7; max-width:500px; margin:0 auto 34px; }
+    .links { display:grid; gap:14px; width:min(390px,100%); margin:auto; }
+    .link {
+      display:flex; align-items:center; justify-content:center; gap:12px; min-height:60px;
+      border:1px solid rgba(255,255,255,.16); border-radius:12px; text-decoration:none;
+      color:#fff; font-weight:800; letter-spacing:.02em; transition:transform .18s, box-shadow .18s, border-color .18s;
+      background:rgba(255,255,255,.055); backdrop-filter:blur(8px);
+    }
+    .link:hover { transform:translateY(-3px); border-color:var(--cyan); box-shadow:0 10px 35px #45e6e022; }
+    .youtube { background:linear-gradient(110deg,#e52d46,#a91e5b); border:0; }
+    .instagram { background:linear-gradient(110deg,#833ab4,#fd1d75,#fcb045); border:0; }
+    .link svg { width:22px; height:22px; fill:currentColor; }
+    footer { margin-top:54px; color:#827b9d; font-size:12px; letter-spacing:.12em; }
+    .spark { color:var(--pink); }
+    @media (prefers-reduced-motion: reduce) { *,*:before,*:after { transition:none !important; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="pixel">✦ Welcome to the retro side ✦</div>
+    <h1>RETROPEOPLE8</h1>
+    <div class="rule"></div>
+    <p class="intro">Geçmişin ruhu, dijital dünyanın enerjisi.<br>
+      RetroPeople8 dünyasını keşfet, yeni içerikleri kaçırma ve bizi sosyal medyada takip et.</p>
+    <nav class="links" aria-label="Sosyal medya bağlantıları">
+      <a class="link youtube" href="https://www.youtube.com/@RetroPeople8" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
+        YouTube Kanalını Keşfet
+      </a>
+      <a class="link instagram" href="https://www.instagram.com/retropeople8/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.2-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg>
+        Instagram'da Takip Et
+      </a>
+    </nav>
+    <footer><span class="spark">◆</span> RETROPEOPLE8 <span class="spark">◆</span></footer>
+  </main>
+</body>
+</html>
